@@ -160,9 +160,21 @@ Use the filterByWord function below to do the following:
     DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-function filterByWord(/*your code here*/){
-    /*your code here*/
+function filterByWord(array, string){
+    //make an empty array so that we can push our strings(flavors) to it 
+    const filteredFlavors = [];
+    //loop through entire array
+    for(let i =0; i < array.length; i++){
+    //if the index contains the string
+        if(array[i].includes(string)){
+        //push that index to the new array
+            filteredFlavors.push(array[i]);
+        }
+    }
+    return filteredFlavors;
 }
+
+console.log('task 7', filteredByWord(originalFlavors, 'chocolate'));
 
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
