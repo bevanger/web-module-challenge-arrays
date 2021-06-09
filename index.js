@@ -45,8 +45,8 @@ Use the copy function below to do the following:
     2. Return a copy of the received array  
 */
 
-function copy(/*your code here*/){
-    /*your code here*/
+function copy(array){
+    return[...array];
 }    
 
 
@@ -174,7 +174,7 @@ function filterByWord(array, string){
     return filteredFlavors;
 }
 
-console.log('task 7', filteredByWord(originalFlavors, 'chocolate'));
+console.log("Task 7: " + filterByWord(originalFlavors, 'Chocolate'));
 
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
